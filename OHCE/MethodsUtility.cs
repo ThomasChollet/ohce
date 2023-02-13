@@ -12,7 +12,7 @@ namespace OHCE
 
         public enum Languages { Francais, English, Unknown }
 
-        public enum PartOfDay { Matin, ApresMidi, Soir, Nuit} 
+        public enum PartOfDay { Matin, ApresMidi, Soir, Nuit, Null} 
 
         public static string Palyndrome(String phrase)
         {
@@ -58,17 +58,19 @@ namespace OHCE
                 stringB.Append(ReverseString(phrase));
             }
 
-            if (lang == Languages.Francais) stringB.Append("\nAu revoir!\n");
+            if (lang == Languages.Francais) stringB.Append("\nAu revoir !\n");
             else stringB.Append("\nGoodbye !\n");
 
             return stringB.ToString() ;
 
         }
 
-        public static string PalyndromePart3(String phrase)
+        public static string PalyndromePart3(String phrase, PartOfDay pDa)
         {
             StringBuilder stringB = new StringBuilder();
-            String pDay = GetPartOfDay();
+            string pDay;
+            if (pDa == PartOfDay.Null) pDay = GetPartOfDay();
+            else pDay = GetPartOfDay(pDa);
 
             Languages lang = LanguageWithSystem();
 
@@ -124,6 +126,14 @@ namespace OHCE
             if (h >= 6 && h < 12) return "_am";
             else if (h >= 12 && h < 19) return "_pm";
             else if (h >= 19 && h < 23) return "_soir";
+            else return "_nuit";
+        }
+
+        public static string GetPartOfDay(PartOfDay pDay)
+        {
+            if (pDay ==  PartOfDay.Matin) return "_am";
+            else if (pDay == PartOfDay.ApresMidi) return "_pm";
+            else if (pDay == PartOfDay.Soir) return "_soir";
             else return "_nuit";
         }
 

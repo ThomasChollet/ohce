@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OHCE", "OHCE\OHCE.csproj", "{5481ECDB-3299-44A6-8C7B-13D3474C77F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestOHCE", "TestOHCE\TestOHCE.csproj", "{D4A88AA6-A992-41B3-8F1E-D47E6DDFF237}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5481ECDB-3299-44A6-8C7B-13D3474C77F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5481ECDB-3299-44A6-8C7B-13D3474C77F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5481ECDB-3299-44A6-8C7B-13D3474C77F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A88AA6-A992-41B3-8F1E-D47E6DDFF237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A88AA6-A992-41B3-8F1E-D47E6DDFF237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A88AA6-A992-41B3-8F1E-D47E6DDFF237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A88AA6-A992-41B3-8F1E-D47E6DDFF237}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
